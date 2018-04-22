@@ -1,0 +1,423 @@
+/*grid*/
+body {
+  min-width: 960px;
+  min-height: 100%;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* `Container
+----------------------------------------------------------------------------------------------------*/
+@font-face {
+	font-family: 'flexslider-icon';
+	src:url('../fonts/webfonts/flexslider-icon.eot');
+	src:url('../fonts/webfonts/flexslider-icon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/webfonts/flexslider-icon.woff') format('woff'),
+		url('../fonts/webfonts/flexslider-icon.ttf') format('truetype'),
+		url('../fonts/webfonts/flexslider-icon.svg#flexslider-icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {font-family: 'Geogrotesque-SemiBold';src: url('../fonts/webfonts/geo-semibold/eot/style_169898.eot');src: url('../fonts/webfonts/geo-semibold/eot/style_169898.eot?#iefix') format('embedded-opentype'),url('../fonts/webfonts/geo-semibold/woff/style_169898.woff') format('woff'),url('../fonts/webfonts/geo-semibold/ttf/style_169898.ttf') format('truetype'),url('../fonts/webfonts/geo-semibold/svg/style_169898.svg#Geogrotesque-SemiBold') format('svg');}
+
+/* GEO - Medium */
+@font-face {font-family: 'Geogrotesque-Medium';src: url('../fonts/webfonts/geo-medium/eot/1110FC_0.eot');src: url('../fonts/webfonts/geo-medium/eot/1110FC_0.eot?#iefix') format('embedded-opentype'),url('../fonts/webfonts/geo-medium/woff/1110FC_0.woff') format('woff'),url('../fonts/webfonts/geo-medium/ttf/1110FC_0.ttf') format('truetype'),url('webfonts/1110FC_0.svg#wf') format('svg');}
+
+/* GEO - Regular */
+ @font-face {font-family: 'Geogrotesque-Regular';src: url('../fonts/webfonts/geo-regular/eot/11014B_0.eot');src: url('../fonts/webfonts/geo-regular/eot/11014B_0.eot?#iefix') format('embedded-opentype'),url('../fonts/webfonts/geo-regular/woff/11014B_0.woff') format('woff'),url('../fonts/webfonts/geo-regular/ttf/11014B_0.ttf') format('truetype'),url('../fonts/webfonts/geo-regular/svg/11014B_0.svg#wf') format('svg');}
+
+* {
+    box-sizing: border-box;
+}
+
+.container_12 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+.image {
+	max-width: 600px;
+	float: left;
+	margin-left: 190px
+}
+
+              /*********************   navigation    **************************/
+
+.topNav {
+	background-color: 140, 137, 137;
+	background: #000080;
+	padding: 25px 0;
+	overflow: hidden;
+	color: white;
+	width: 100%;
+}
+
+.topNav nav {
+  float: right;
+  margin-top: 15px;
+}
+
+.topNav nav ul li {
+  display: inline-block;
+  margin: 0 0 0 40px;
+  font-size: 24px;
+}
+
+.topNav nav ul li a {
+  color: white;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  color: white;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 48px;
+  font-weight: 800;
+  color: white;
+  width: 100%;
+}
+
+.photo {
+	height: 100%;
+	width: 100%;
+}
+
+.mainNav {
+  color: white;
+  float: left;
+  width: 100%;
+}
+
+
+              /*********************   body    **************************/
+
+.containerOne {
+  width: 960px;
+  margin: 0 auto;
+}
+
+
+}
+
+
+.contactContainer
+{
+  width: 960px;
+  margin: 0 auto;
+  padding: 100px;
+  background: #DCDCDC;
+  margin-top: 20px;
+  border-style: double;
+}
+
+.comment
+{
+	margin: 0 auto;
+	padding-top: 50px;
+	margin-bottom: 75px;
+	height: 100px;
+	width: 500px;
+
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+.sideContent {
+	padding: 10px;
+    border: 5px solid black;
+    width: 50%;
+    float: left;
+    margin-top: 20px;
+}
+
+.bottomContent {
+	padding: 10px;
+    border: 5px solid black;
+    width: 71%;
+    margin: 0 auto;
+}
+
+.bottomContent {
+	clear: both;
+	padding: 40px;
+}
+
+.containerImage {
+	margin-left: 100px;
+	padding: 30;
+}
+
+.imageOne {
+	float: left;
+	max-width: 320px;
+	padding: 10px;
+}
+
+.imageTwo {
+	float: left;
+	max-width: 320px;
+	padding: 10px;
+}
+
+.projects {
+	float: left;
+	max-width: 1000px;
+	margin-left: 280px;
+	margin-right: 50px;
+}
+
+.projectColumnOne {
+	float: left;
+	max-width: 50%;
+	max-height: 50%;
+	padding: 10px;
+}
+
+.projectColumnTwo {
+	float: left;
+	max-width: 50%;
+	max-height: 50%;
+	padding: 10px;
+}
+
+.firstSite {
+	border: 3px solid black;
+	min-height: 250px;
+}
+
+.secondSite {
+	border: 3px solid black;
+	min-height: 250px;
+}
+
+.thirdSite {
+	border: 3px solid black;
+	min-height: 250px;
+}
+
+.fourthSite {
+	border: 3px solid black;
+	min-height: 250px;
+}
+
+.firstProject {
+	padding: 10px;
+	vertical-align: middle;
+}
+
+.secondProject {
+	padding: 10px;
+	vertical-align: middle;
+}
+
+.thirdProject {
+	padding: 10px;
+	vertical-align: middle;
+}
+
+.fourthProject {
+	padding: 10px;
+	vertical-align: middle;
+}
+
+.projectTitle {
+	margin: auto;
+    width: 50%;
+    text-align: center;
+    height: 50%;
+}
+.projectContent {
+	margin: auto;
+    width: 50%;
+    text-align: center;
+    height: 50%;
+}
+
+.checkGithub {
+	margin: auto;
+	text-align: center;
+	padding: 30px;
+}
+
+p {
+	font-size: 14px;
+}
+
+.resources {
+	float: left;
+	max-width: 960px;
+	margin-left: 280px;
+	margin-right: 50px;
+}
+
+.firstRes {
+	border: 3px solid black;
+	width: 100%;
+}
+
+.secondRes {
+	border: 3px solid black;
+	width: 100%;
+}
+
+.first {
+	padding: 10px;
+}
+
+.secondPost {
+	padding: 10px;
+}
+
+.thirdPost {
+	padding: 10px;
+}
+
+.form {
+	padding: 20px;
+	margin-left: 580px;
+
+}
+
+.contentContainerImage {
+	float: left;
+	padding: 30;
+	width: 600px;
+	padding-top: 10px;
+}
+
+.jeffContent {
+	border: 3px solid black;
+	padding: 20px;
+}
+.contentContainerImageTwo {
+	float: left;
+	padding: 30;
+	width: 600px;
+	padding-top: 10px;
+}
+.userContent {
+	border: 3px solid black;
+	padding: 20px;
+}
+.html {
+	max-width: 100px;
+	float: left;
+}
+
+.css {
+	max-width: 100px;
+	max-height: 100px;
+	margin-left: 200px;
+	float: left;
+}
+
+.javascript {
+	max-width: 100px;
+	float: right;
+}
+
+.portfolioImage {
+	min-width: 300px;
+	margin: auto;
+    width: 50%;
+  	margin: 0 auto;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.contentContainer {
+	border: 5px solid black;
+	text-align: center;
+}
+
+.servicesContent {
+	padding: 20px;
+	clear: both;
+    width: 71%;
+    margin: 0 auto;
+}
+
+.aboutMeContent {
+	max-width: 1500px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.aboutMeImage {
+	width: 400px;
+	float: left;
+	padding: 10px;
+    border: 5px solid black;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-left: 140px;
+    margin-top: 80px;
+}
+
+.aboutMeContainer {
+	width: 700px;
+	float: right;
+	padding: 10px;
+    border: 5px solid black;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.aboutMe {
+	text-align: center;
+}
+
+              /*********************   footer    **************************/
+.bottom {
+	background-color: rgb(95, 158, 160);
+	clear: both;
+	margin-top: 20px;
+}
+
+.containerTwo {
+  width: 960px;
+  margin: 0 auto;
+  padding: 60px;
+  clear: both;
+}
+
+.footer {
+  background: rgb(57, 57, 57);
+  overflow: hidden;
+  width: 100%;
+}
+
+.copyright .location {
+  color: white;
+  float: left;
+}
+
+.copyright {
+	color: white;
+	width: 50%;
+	float: left;
+}
+
+.socialMedia {
+	margin-top: 50px;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+	width: 50%;
+}
+
+.location {
+	float: right;
+	color: white;
+	/*How do I put them on the same line?*/
+}
