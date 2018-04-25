@@ -1,20 +1,8 @@
-@font-face {
-	font-family: 'flexslider-icon';
-	src:url('../fonts/webfonts/flexslider-icon.eot');
-	src:url('../fonts/webfonts/flexslider-icon.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/webfonts/flexslider-icon.woff') format('woff'),
-		url('../fonts/webfonts/flexslider-icon.ttf') format('truetype'),
-		url('../fonts/webfonts/flexslider-icon.svg#flexslider-icon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+@media screen and (max-width: 768px) and (min-width: 485px) {
+  form {
+    max-width: 70%;
+  }
 }
-@font-face {font-family: 'Geogrotesque-SemiBold';src: url('../fonts/webfonts/geo-semibold/eot/style_169898.eot');src: url('../fonts/webfonts/geo-semibold/eot/style_169898.eot?#iefix') format('embedded-opentype'),url('../fonts/webfonts/geo-semibold/woff/style_169898.woff') format('woff'),url('../fonts/webfonts/geo-semibold/ttf/style_169898.ttf') format('truetype'),url('../fonts/webfonts/geo-semibold/svg/style_169898.svg#Geogrotesque-SemiBold') format('svg');}
-
-/* GEO - Medium */
-@font-face {font-family: 'Geogrotesque-Medium';src: url('../fonts/webfonts/geo-medium/eot/1110FC_0.eot');src: url('../fonts/webfonts/geo-medium/eot/1110FC_0.eot?#iefix') format('embedded-opentype'),url('../fonts/webfonts/geo-medium/woff/1110FC_0.woff') format('woff'),url('../fonts/webfonts/geo-medium/ttf/1110FC_0.ttf') format('truetype'),url('webfonts/1110FC_0.svg#wf') format('svg');}
-
-/* GEO - Regular */
- @font-face {font-family: 'Geogrotesque-Regular';src: url('../fonts/webfonts/geo-regular/eot/11014B_0.eot');src: url('../fonts/webfonts/geo-regular/eot/11014B_0.eot?#iefix') format('embedded-opentype'),url('../fonts/webfonts/geo-regular/woff/11014B_0.woff') format('woff'),url('../fonts/webfonts/geo-regular/ttf/11014B_0.ttf') format('truetype'),url('../fonts/webfonts/geo-regular/svg/11014B_0.svg#wf') format('svg');}
 
 .navbar-default .navbar-brand {
     color: white;
@@ -31,6 +19,19 @@
 
 .navbar-default .navbar-nav > li > a:active {
   color: #940000;
+}
+
+.main-heading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  padding: 0;
+  margin: auto;
+  height: 40px;
+  color: #fff;
 }
 
 .center-block {
@@ -59,17 +60,6 @@ margin: .5em;
     width: 22px;
     height: 2px;
     border-radius: 1px;
-}
-
-.container_12 {
-  margin-left: auto;
-  margin-right: auto;
-  width: 960px;
-}
-.image {
-	max-width: 600px;
-	float: left;
-	margin-left: 190px
 }
 
               /*********************   navigation    **************************/
@@ -105,96 +95,18 @@ margin: .5em;
   padding: 20px;
 }
 
-.soc-media-ul a {
-  text-align: center;
-  text-decoration: none;
-}
-.copyright {
-  text-align: center;
-  text-decoration: none;
-  color: white;
+@media screen and (max-width: 600px) {
+  .mainNav a:not(:first-child) {display: none;}
+  .mainNav a.icon {
+    float: right;
+    display: block;
+  }
 }
 
-.containerResponsive > h1 {
-  font-weight: 300;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.soc-media-ul {
-  display: flex;
-  justify-content: center;
-}
-
-.soc-media-ul li:not(:first-child) a {
-  margin-left: 1em;
-}
-
-.soc-media-ul a {
-  display: block;
-  padding: 0.5em .65rem;
-  font-size: 1rem;
-  color: #fff;
-  border-radius: 50%;
-  border: 2px solid;
-}
-.soc-media-ul a:hover, .soc-media-ul a:focus {
-  color: #ad0000;
-}
-
-.sec-main {
-  position: relative;
-  height: 560px;
-  background: url("../Images/PortfolioHomePage.jpg") no-repeat center center;
-  background-size: cover;
-}
-
-.logo {
-  font-size: 48px;
-  font-weight: 800;
-  color: white;
-  width: 100%;
-}
-
-.mainNav {
-  color: white;
-  float: left;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-
-              /*********************   body    **************************/
-
-.containerOne {
-  width: 960px;
-  margin: 0 auto;
-}
-
-.contactContainer
-{
-  width: 960px;
-  margin: 0 auto;
-  padding: 100px;
-  background: #DCDCDC;
-  margin-top: 20px;
-  border-style: double;
-}
-
-.comment
-{
-	margin: 0 auto;
-	padding-top: 50px;
-	margin-bottom: 75px;
-	height: 100px;
-	width: 500px;
-
-}
-
-img {
-	max-width: 100%;
-	height: auto;
+@media screen and (max-width: 768px) and (min-width: 485px) {
+  form {
+    max-width: 70%;
+  }
 }
 
 @media screen and (max-width: 528px) and (min-width: 320px) {
@@ -242,6 +154,117 @@ hr {
   width: 7%;
 }
 
+.container_12 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+.image {
+  max-width: 600px;
+  float: left;
+  margin-left: 190px
+}
+
+.soc-media-ul a {
+  text-align: center;
+  text-decoration: none;
+}
+.copyright, .mainNav {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.containerResponsive > h1 {
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.soc-media-ul {
+  display: flex;
+  justify-content: center;
+}
+
+.soc-media-ul li:not(:first-child) a {
+  margin-left: 1em;
+}
+
+.soc-media-ul a {
+  display: block;
+  padding: 0.5em .65rem;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 50%;
+  border: 2px solid;
+}
+.soc-media-ul a:hover, .soc-media-ul a:focus {
+  color: #ad0000;
+}
+
+.sec-main {
+  position: relative;
+  height: 560px;
+  background: url("../Images/PortfolioHomePage.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.sec-main:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  font-size: 48px;
+  font-weight: 800;
+  color: white;
+  width: 100%;
+}
+
+.mainNav {
+  color: white;
+  float: left;
+  width: 100%;
+}
+
+
+              /*********************   body    **************************/
+
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.containerOne {
+  padding: 30px;
+}
+
+.contactContainer
+{
+  width: 960px;
+  margin: 0 auto;
+  padding: 100px;
+  background: #DCDCDC;
+  margin-top: 20px;
+  border-style: double;
+}
+
+.comment
+{
+  margin: 0 auto;
+  padding-top: 50px;
+  margin-bottom: 75px;
+  height: 100px;
+  width: 500px;
+
+}
+
 .sideContent {
 	padding: 10px;
     border: 5px solid black;
@@ -281,44 +304,42 @@ hr {
 }
 
 .projects {
-	max-width: 1000px;
-	margin-left: 280px;
-	margin-right: 50px;
-  margin-top: 70px;
+  margin-top: 100px;
 }
 
 .projectColumnOne {
-	float: left;
-	max-width: 50%;
-	max-height: 50%;
+  margin: 0 auto;
 	padding: 10px;
+  max-width: 1200px;
 }
 
 .projectColumnTwo {
-	float: left;
-	max-width: 50%;
-	max-height: 50%;
+  margin: 0 auto;
 	padding: 10px;
+  max-width: 1200px;
 }
 
 .firstSite {
 	border: 3px solid black;
-	min-height: 250px;
 }
 
 .secondSite {
 	border: 3px solid black;
-	min-height: 250px;
 }
 
 .thirdSite {
 	border: 3px solid black;
-	min-height: 250px;
 }
 
 .fourthSite {
 	border: 3px solid black;
-	min-height: 250px;
+}
+
+.checkGithub {
+  margin: auto;
+  text-align: center;
+  padding: 30px;
+  clear: both;
 }
 
 .firstProject {
@@ -458,33 +479,23 @@ p {
     margin: 0 auto;
 }
 
-.aboutMeContent {
-	max-width: 1500px;
-	padding: 10px;
-	margin-bottom: 10px;
-  margin: 0 auto;
-}
-
 .aboutMeImage {
-	width: 400px;
-	padding: 10px;
-    border: 5px solid black;
-    margin: 0 auto;
-    float: left;
-    margin-bottom: 10px;
-    margin-left: 140px;
-    margin-top: 150px;
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 130px;
 }
 
 .aboutMeContainer {
-	width: 700px;
 	padding: 10px;
-	float: right;
-    border: 5px solid black;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    margin-right: 100px;
-    margin-top: 80px;
+  border: 5px solid black;
+  margin: 0 auto;
+  text-align: center;
+  clear: both;
+  width: 70%;
+  font-size: 30%;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .aboutMe {
