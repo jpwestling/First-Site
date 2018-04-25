@@ -1,15 +1,3 @@
-/*grid*/
-body {
-  min-width: 960px;
-  min-height: 100%;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/* `Container
-----------------------------------------------------------------------------------------------------*/
 @font-face {
 	font-family: 'flexslider-icon';
 	src:url('../fonts/webfonts/flexslider-icon.eot');
@@ -28,8 +16,49 @@ body {
 /* GEO - Regular */
  @font-face {font-family: 'Geogrotesque-Regular';src: url('../fonts/webfonts/geo-regular/eot/11014B_0.eot');src: url('../fonts/webfonts/geo-regular/eot/11014B_0.eot?#iefix') format('embedded-opentype'),url('../fonts/webfonts/geo-regular/woff/11014B_0.woff') format('woff'),url('../fonts/webfonts/geo-regular/ttf/11014B_0.ttf') format('truetype'),url('../fonts/webfonts/geo-regular/svg/11014B_0.svg#wf') format('svg');}
 
-* {
-    box-sizing: border-box;
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus {
+    color: white;
+}
+
+.navbar .fa-external-link {
+  vertical-align: top;
+}
+
+.navbar-default .navbar-nav > li > a:active {
+  color: #940000;
+}
+
+.center-block {
+border: 1px solid black;
+margin: .5em;
+
+}
+
+.navbar {
+	background: #000080;
+}
+
+.navbar .fa-external-link {
+  font-size: 10px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 4px;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
 }
 
 .container_12 {
@@ -46,7 +75,6 @@ body {
               /*********************   navigation    **************************/
 
 .topNav {
-	background-color: 140, 137, 137;
 	background: #000080;
 	padding: 25px 0;
 	overflow: hidden;
@@ -62,7 +90,8 @@ body {
 .topNav nav ul li {
   display: inline-block;
   margin: 0 0 0 40px;
-  font-size: 24px;
+  font-size: 16px;
+  color: white;
 }
 
 .topNav nav ul li a {
@@ -76,6 +105,50 @@ body {
   padding: 20px;
 }
 
+.soc-media-ul a {
+  text-align: center;
+  text-decoration: none;
+}
+.copyright {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.containerResponsive > h1 {
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.soc-media-ul {
+  display: flex;
+  justify-content: center;
+}
+
+.soc-media-ul li:not(:first-child) a {
+  margin-left: 1em;
+}
+
+.soc-media-ul a {
+  display: block;
+  padding: 0.5em .65rem;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 50%;
+  border: 2px solid;
+}
+.soc-media-ul a:hover, .soc-media-ul a:focus {
+  color: #ad0000;
+}
+
+.sec-main {
+  position: relative;
+  height: 560px;
+  background: url("../Images/PortfolioHomePage.jpg") no-repeat center center;
+  background-size: cover;
+}
+
 .logo {
   font-size: 48px;
   font-weight: 800;
@@ -83,15 +156,12 @@ body {
   width: 100%;
 }
 
-.photo {
-	height: 100%;
-	width: 100%;
-}
-
 .mainNav {
   color: white;
   float: left;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -101,10 +171,6 @@ body {
   width: 960px;
   margin: 0 auto;
 }
-
-
-}
-
 
 .contactContainer
 {
@@ -130,6 +196,52 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+@media screen and (max-width: 528px) and (min-width: 320px) {
+  form {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 667px) and (min-width: 360px) {
+  form {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 736px) and (min-width: 414px) {
+  form {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  form {
+    max-width: 70%;
+  }
+}
+
+section {
+  padding: 5em 0;
+}
+
+footer {
+  padding: 3em 0;
+  background: #159C92;
+  clear: both;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+hr {
+  margin-bottom: 3em;
+  width: 7%;
+}
+
 .sideContent {
 	padding: 10px;
     border: 5px solid black;
@@ -156,22 +268,23 @@ img {
 }
 
 .imageOne {
-	float: left;
 	max-width: 320px;
 	padding: 10px;
+  text-align: center;
 }
 
 .imageTwo {
 	float: left;
 	max-width: 320px;
 	padding: 10px;
+  text-align: center;
 }
 
 .projects {
-	float: left;
 	max-width: 1000px;
 	margin-left: 280px;
 	margin-right: 50px;
+  margin-top: 70px;
 }
 
 .projectColumnOne {
@@ -309,38 +422,38 @@ p {
 }
 .html {
 	max-width: 100px;
-	float: left;
+  max-height: 100px;
+  text-align: center;
+  width: 33%;
 }
 
 .css {
 	max-width: 100px;
-	max-height: 100px;
-	margin-left: 200px;
-	float: left;
+  max-height: 100px;
+  text-align: center;
+  width: 33%;
 }
 
 .javascript {
-	max-width: 100px;
-	float: right;
+  max-width: 100px;
+  max-height: 100px;
+  text-align: center;
+  width: 33%;
 }
 
 .portfolioImage {
-	min-width: 300px;
-	margin: auto;
-    width: 50%;
-  	margin: 0 auto;
-	padding: 20px;
-	margin-bottom: 20px;
+  margin-top: 100px;
+  text-align: center;
 }
 
 .contentContainer {
 	border: 5px solid black;
 	text-align: center;
+  clear: both;
 }
 
 .servicesContent {
 	padding: 20px;
-	clear: both;
     width: 71%;
     margin: 0 auto;
 }
@@ -349,28 +462,29 @@ p {
 	max-width: 1500px;
 	padding: 10px;
 	margin-bottom: 10px;
+  margin: 0 auto;
 }
 
 .aboutMeImage {
 	width: 400px;
-	float: left;
 	padding: 10px;
     border: 5px solid black;
     margin: 0 auto;
+    float: left;
     margin-bottom: 10px;
     margin-left: 140px;
-    margin-top: 80px;
+    margin-top: 150px;
 }
 
 .aboutMeContainer {
 	width: 700px;
-	float: right;
 	padding: 10px;
+	float: right;
     border: 5px solid black;
     margin: 0 auto;
     margin-bottom: 30px;
     margin-right: 100px;
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 .aboutMe {
@@ -391,33 +505,11 @@ p {
   clear: both;
 }
 
-.footer {
-  background: rgb(57, 57, 57);
-  overflow: hidden;
-  width: 100%;
+.soc-media-ul {
+  display: flex;
+  justify-content: center;
 }
 
-.copyright .location {
-  color: white;
-  float: left;
-}
-
-.copyright {
-	color: white;
-	width: 50%;
-	float: left;
-}
-
-.socialMedia {
-	margin-top: 50px;
-	margin: 0 auto;
-	color: white;
-	text-align: center;
-	width: 50%;
-}
-
-.location {
-	float: right;
-	color: white;
-	/*How do I put them on the same line?*/
+.soc-media-ul li:not(:first-child) a {
+  margin-left: 1em;
 }
