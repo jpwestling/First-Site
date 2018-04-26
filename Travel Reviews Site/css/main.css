@@ -64,7 +64,7 @@ body {
   font-size: 24px;
 }
 .topNav nav ul li a {
-  color: black;
+  color: white;
 }
 /*body*/
 /*footer*/
@@ -137,7 +137,7 @@ p {
 .underConstruction {
 	margin: auto;
 	text-align: center;
-	padding: 30px;
+	padding: 250px;
 	font-size: 36px;
 }
 

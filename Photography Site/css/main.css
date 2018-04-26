@@ -216,6 +216,10 @@ margin: .5em;
 	padding: 30;
 }
 
+.content {
+  text-align: center;
+}
+
 .imageOne {
 	float: left;
 	max-width: 640px;
@@ -279,8 +283,8 @@ p {
 
 .form {
 	padding: 20px;
-	margin-left: 580px;
-
+	text-align: center;
+  margin-top: 100px;
 }
 
 .soc-media-ul a {

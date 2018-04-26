@@ -19,13 +19,28 @@
 
 </head>
 <body>
-<!-- Title, nav, language all in top div -->
-<!-- Photo that switches out with arrows on left and right -->
+
+<div class="wrapper">
+<header role="header">
 <div class="topNav">
-    <div class="container">
-    <h1>Photography</h1>
-    <nav>
-        <ul class="mainNav">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="containerOne">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse" role="button">
+
+            <span class="sr-only">Toggle Navigation</span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+          </button>
+
+    <h1 class="navbar-brand" id="logo"> Photography</h1>
+</div>
+    <nav class="collapse navbar-collapse">
+        <ul class="mainNav" id="nav navbar-nav navbar-right js-nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Me</a></li>
             <li><a href="portfolio.html">Photography</a></li>
@@ -35,6 +50,7 @@
     </nav>
 </div>
 </div>
+</header>
 
 <div class="form">
 <form id="country-search-form">
