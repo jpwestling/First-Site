@@ -32,7 +32,13 @@ body {
 	width: 50%;
 	margin: 0 auto;
     clear: both;
+      margin-top: 50px;
 }
+
+.maincontent {
+  margin-top: 50px;
+}
+
 /*top part*/
 .topNav {
 	background-color: 140, 137, 137;
